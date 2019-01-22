@@ -1,0 +1,10 @@
+------------------------------------------ Estilos ------------------------------------------------
+
+   Los estilos son los formato de visualizacion que tendra el codigo (CSS).
+
+   Al declarar un "className" en un archivo js, se declaran los atributos del mismo en el archivo
+      .css, el cual es declarado de la siguiente manera
+
+         .<className>{
+            <atributos,...>
+         }

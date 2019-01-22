@@ -1,0 +1,15 @@
+--------------------------------------- CREATE-REACT-APP ------------------------------------------
+
+   La aplicación se instalara atraves de Npm, las intrucciones seran desde cmd:
+    - npm install -g create-reat-app
+
+   Se debe seleccionar una carpeta, la cual contendra todos los recursos para el proyecto:
+      C:\Users\ed_ja\Documents\React\places
+
+   Por medio del comnado "create-react-app <nombre_del_proyecto>" se crea el proyecto:
+    - create-react-app places
+
+   Al terminar de ejecutarse la creación deel proyecto, utilizamos el comando "yarn start" o en
+      "npm start" para que el servidor inicio, y se cargue en localhost.
+
+   

@@ -1,0 +1,22 @@
+-------------------------------------------- REACT ------------------------------------------------
+
+ ° React es una librería de JavaScript:
+
+ ° React está basado en COMPONENTES:
+   Estos componentes encapsulan dos cosas, FUNCIONALIDAD y ESTADO.
+      - La FUNCIONALIDAD significa que cada componente tiene un proósito.
+      - Cada componente guarda su propio ESTADO, esto es, su propia información necesaria para saber
+         cómo deben de mostrarse los datos.
+
+° React no está hecho para ningún entorno de trabajo en específico:
+   React puede funcionar con el lenguaje de backend que tú quieras, en el entorno que así desees,
+      además de, incluso, poder funcionar con otros frameworks de JavaScript.
+
+° React optimiza el rendimiento de tu aplicación:
+   React se basa en la separación de la app en distintos componentes, todo esto con el fin de un
+      mejor rendimiento al atualizar datos.
+   React guarda internamente una referencia virtual al árbol de componentes, al que llamamos Virtual
+      DOM, como cada componente guarda su propio estado, es fácil saber qué debemos actualizar,
+      cuando un dato del estado se modifica, esto hace que las apps se actualicen más rápido
+
+° React es la librería más popular de JavaScript:

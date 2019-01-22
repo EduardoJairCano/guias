@@ -1,0 +1,42 @@
+
+Editor:
+   minimap
+   minimap-highlight-selected
+   file-icons
+   atom-beautify
+   autocomplete-paths
+   linter
+   atom-live-server
+   busy-signal
+   highlight-selected
+   goto-definition
+
+
+Angular:
+   angularjs *
+   Angular-2-Typescript-Snippets
+
+Bootstrap:
+   Atom Bootstrap3
+   V-Bootstrap4
+
+CSS:
+   Pigments
+
+JavaScript:
+   autocomplete-js-import
+   javascript-snippets
+   ng2-snippets
+   linter-jscs
+
+Ruby HAML:
+   language-haml
+
+ReactJS:
+   react
+   atom-react-autocomplete
+   react-snippets
+   react-redux-snippets
+
+Typescript:
+   atom-typescript

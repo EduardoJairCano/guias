@@ -1,0 +1,27 @@
+--------------------------------- Libreria Material UI --------------------------------------------
+                                                              Fuente: http://www.material-ui.com/#/
+
+   Es posible apoyarnos de una guia de diseño, en el proyecto Places se empleara una herramienta
+      llamada Material-ui, la cual se instala apartir de la consola, ubicados en la carpeta del
+      proyecto, con el comando
+
+      npm install material-ui                                                                      :
+
+   Previo a la instalación, es necesario dar un nuevo yarn para actualizar los archivos.
+
+   Lo siguiente a realizar es importar la libreria en el archivo que se solicitara, el cual quedaria
+
+      import MuiThemeProvider from 'materialui/styles/MuiThemeProvider'                            :
+
+   Ya en el codigo sera necesario cambiar el apartado <section> por <MuiThemeProvider>
+
+-- Botones ----------------------------------------------------------------------------------------
+
+   import RaisedButton from 'material-ui/RaisedButton';                                            :
+
+-- Colores ----------------------------------------------------------------------------------------
+                                          Fuente: https://v0.material-ui.com/#/customization/colors
+
+   Por medio de la libreria, se selecciona el codigo del color
+
+      import { <color> } from 'material-ui/styles/colors';                                         :

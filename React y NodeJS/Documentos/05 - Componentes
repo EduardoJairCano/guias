@@ -1,0 +1,41 @@
+----------------------------------------- Compenentes ---------------------------------------------
+                                 Informacion: https://codigofacilito.com/articulos/components-react
+
+   Como antes se menciono, React trabaja a base de Compnenentes, entonces para ello, y con el fin de
+      contar con un buen control de recursos, se creara una carpeta en "/src/componentes"
+
+   COMPONENTE: es un bloque de código que puede recibir argumentos y que genera elementos de React.
+
+   A las propiedades de un componente se le conoce como PROPS:
+    - Los PROPS son datos que normalmente no son modificados.
+
+   Se trabajara con dos tipos de componentes: los que representan paginas completas, y algunos
+      componentes un poco más sencillos.
+
+
+--- Exporta e Importar elementos ------------------------------------------------------------------
+
+   Para llevar a cabo una exportación e importación de un elemento, existen dos maneras:
+   1) Exportar con default:
+      - Por medio del comando "export default <elemento>", en tal caso no sera necesario identificar
+        el elemento al momento de importar, se podra colocar un simple "import <elemento> from ..."
+   2) Exportar sin default:
+      - La sintaxis para exportar quedaria igual, solo que se omitiria el default, y al importar el
+        elemento se tendria que colocar entre llaves, "import {<elemento>} from ..."
+
+
+--- State de un componente ------------------------------------------------------------------------
+
+   Para declarar las propiedades de un componente, es necesario crear un constructor(), el cual
+      almacenara todos los valores del componente, los cuales pueden ser variables y funciones
+
+
+--- Eventos ---------------------------------------------------------------------------------------
+
+   Son acciones que ocurren en los elementos del render. Es neceario declarar en el elemento que se
+      desea activar, por medio de la sintaxis "on<evento>="
+
+   Para hacer uso de una buena codificación y el correcto empleo de contexto, es necesario declarar
+      dentro del constructor la función auxiliar del evento que se empleara
+
+         "this.<funcion> = this.<funcion>.bind(this);"

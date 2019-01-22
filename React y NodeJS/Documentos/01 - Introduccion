@@ -1,0 +1,18 @@
+--------------------------------------- PROYECTO PLACES -------------------------------------------
+
+Single Page Application (SPA)
+   - Una pagina que se carga una sola vez, despues actualiza los componentes del sitio de manera
+     dinámica usando javaScript y Ajax.
+   - Las SPA son más rapidas y más responsivas.
+
+Herramientas:
+   - Back End: NodeJS con Express
+   - Front End: React (Libreria de javaScript) WebPack (paquete de modulos de javaScript)
+   - Database: MongoDB
+   - Contenedor del estatus de la aplicación: Redux (Libreria de javaScript)
+
+Instalación:
+   - Navegador:                              Google Chrome (v61.0.3163)
+   - IDE:                                    Atom (v1.31.2)
+   - Entorno de ejecucion:                   NodeJS (v8.9.3)
+   - Manejador de paquetes para NodeJS:      Npm (v6.4.1)

@@ -1,0 +1,10 @@
+--------------------------------- Mocking de negocios ---------------------------------------------
+
+   Son metodos de negociocion para tratar los datos, normalmente se colocan en la carpeta de 'requests'
+
+   Dado que el archivo "app.js" no debe contar con tanto código, solo las llamadas a los componentes.
+
+   Todos estos metodos de comunicacion, deben estar ordenados de una manera eficiente, la cual puede
+      ser cada componente en un archivo dentro de la carpeta del mismo nombre
+
+   

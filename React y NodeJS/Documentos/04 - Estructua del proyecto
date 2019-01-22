@@ -1,0 +1,13 @@
+----------------------------------- Estructura del Proyecto ---------------------------------------
+
+   Se podran visulzar carpetas, las cuales tendran los recursos necesarios para el funcionamiento
+      de la aplicación.
+
+   /public/index.html
+      En ese archivo encontraremos las propiedades prinipales del proyecto, como el titulo, el
+         favicon, entre otros.
+
+   /src/<...>
+      En este carpeta se almacenaran los archivos necesarios para el buen funcionamineto de la app
+
+   
