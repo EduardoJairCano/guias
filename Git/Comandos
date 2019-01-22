@@ -1,138 +1,101 @@
-﻿
----- Crear un area de trabajo -----------------------------------------------------------
+﻿Crear un Nuevo Repositorio: Guía rápida
 
-   Abriendo una consola de comandos o desde Git Bash, nos posicionamos en la carpeta del
-   proyecto, y por medio del siguiente comando se crea un proyecto nuevo en GitHub.
-
-      git init
-
-
----- Visualizar archivos en trabajo -----------------------------------------------------
-
-   Para visualizar que archivos se encuentran en el área de trabajo actual.
-
-      git status
-
-
----- Agregar archivos al área de trabajo ------------------------------------------------
-
-   Con el siguiente comando se pueden agregar ciertos archivos al área de trabajo, para
-   despues realizar un commit y agregarlo al repositorio del proyecto.
-
-      git add <name file.extencion>
-
-   Para agregar todos los archivos que han sido modificados, se emplean un .
-
-      git add .
+	- Se debe crear tanto el PROYECTO localmente, como un REPOSITORIO en GitHub.
+	- Se ingresa desde la terminal a la página del proyecto, y se inicia un nuevo repositorio Git para los archivos, por medio de "git init".
+	- Se deben agregar cada uno de los archivos en la carpeta, por medio del comando "git add ." con el cual se almacen en el repositorio temporal.
+	- Con el comando "git commit - m "<mensaje del commit>"" en el cual se va a indicar el comentario o commit por el cual se han actualizado los archivos de manera local.
+	- Ahora se deben colocar el comando remote que está en repositorio de GitHub el cual es del tipo "git remote add origin https://github.com/<titular>/<nombreProyecto.git>" con el cual asigna la ruta donde se estarán realizando los commit.
+	- Por último se utiliza el comando "git push -u origin master" para enviar todos aquellos archivos del repositorio local al repositorio en GitHub.
+	- Se puede emplear un archivo del tipo gitignore, el cual tiene como función el ignorar las dependencias a archivos que se puedan o no generar por parte de ciertos lenguajes. En la página www.gitignore.io se puede crear este archivo.
+	
+	- Para ACTUALIZAR se tiene que:
+		○ agregar los archivos al repositorio local con "git add ."
+		○ después realizar un commit con "git commit - m "<mensaje del commit>""
+		○ para finalizar con  "git push -u origin master" .
 
 
----- Configurar GitHub ------------------------------------------------------------------
 
-   Los comandos básicos de Git son escenciales para poder trabajar en un repositorio en
-   linea, para ello se emplean los siguientes comandos:
-
-      git config --global user.mail "correo@electronico.com"
-      git config --global user.name "nombreDeUsuario"
+---- Crear un área de trabajo ----------------------------------------------------------------------
+Abriendo una consola de comandos o desde Git Bash, nos posicionamos en la carpeta del proyecto, y por medio del siguiente comando se crea un proyecto nuevo en GitHub.
+	
+	• git init
 
 
----- Crear un punto de partida de repositorio -------------------------------------------
+---- Visualizar archivos en trabajo ----------------------------------------------------------------
+Para visualizar que archivos se encuentran en el área de trabajo actual.
 
-   Para comenzar a trabajar con un repositorio, por medio del siguiente comando se podrá
-   crear el repositorio en GitHub, al ingresarlo nos solicitará el nombre y contraseña del
-   usuario GitHub, previo a ello se abrirá un archivo en VIN para escribir el detelle del
-   commit, se teclea I y se comienza a escribir y dar ESC al terminar, y despues tecleamos
-   ":wq" y se preciona Enter para guardar los cambios.
-
-      git commit
-
-   Para evitar el ingresar al editor de texto, basta con emplear el comando siguiente, en
-   el cual se enviará el mensaje para la actualización
-
-      git commit -m "Mensaje de actualización..."
+	• git status
 
 
----- Visualizar los Commits -------------------------------------------------------------
+---- Agregar archivos al área de trabajo -----------------------------------------------------------
+Con el siguiente comando se pueden agregar ciertos archivos al área de trabajo, para después realizar un commit y agregarlo al repositorio del proyecto.
 
-   Para visualizar los commits que se han creado, se emplea el comando git log y se podrá
-   ver a detalle los commits.
+	• git add <name file.extencion>
 
-      git log
-
-
----- Retroceder las verisiones de archivos ----------------------------------------------
-
-   En caso de que se modifique un archivo, pero aun no se haya hecho un commit, por medio
-   del comamndo status se podrá visualizar que archivos han sido modificados, y en caso de
-   querer descartar dichos cambios, y regresar a la versión original, se utiliza:
-
-      git checkout -- <nombre del archivo>
+Para agregar todos los archivos que han sido modificados, se emplean un .
+	
+	• git add .
 
 
----- Visualizar ls diferencias entre versiones de archivos ------------------------------
+---- Configurar GitHub -----------------------------------------------------------------------------
+Los comandos básicos de Git son esenciales para poder trabajar en un repositorio en línea, para ello se emplean los siguientes comandos:
 
-   Si existiera algun archivo modificado pero un no agregado al repositorio maestro, será
-   posible visualizar que cambios a tenido el archivo, por medio del comando:
-
-      git diff <nombre del archivo>
-
-
----- Versiones de Proyectos -------------------------------------------------------------
-
-   Es posible crear diferentes tipos de proyectos, para trabajar distintas versiones, ya
-   sea para implementar algún cambio nuevo o de versiones de prueba o respaldo, con el
-   comando git branch para visaluzar en que verion se esta trabajando, por deafult será
-   Master, y para crear una nueva version es con branch más el nombre de la version.
-
-      git branch
-
-      git branch <nombre version>
-
-   Para cambiar entre versiones se emplea un checkout, con el comando, más la version.
-
-      git checkout <nombre version>
+	• git config --global user.mail "correo@electronico.com"
+	• git config --global user.name "nombreDeUsuario"
 
 
----- Subir proyecto a un Repositorio GitHub ---------------------------------------------
+---- Crear un punto de partida de repositorio ------------------------------------------------------
+Para comenzar a trabajar con un repositorio, por medio del siguiente comando se podrá crear el repositorio en GitHub, al ingresarlo nos solicitará el nombre y contraseña del usuario GitHub, previo a ello se abrirá un archivo en VIN para escribir el detalle del commit, se teclea I y se comienza a escribir y dar ESC al terminar, y después tecleamos ":wq" y se presiona Enter para guardar los cambios.
 
-   Previo a la creación de un nuevo repositorio o proyecto en GitHub, se obtendra una URL
-   preteneciente al mismo. Ubicandonos en la carpeta raiz del proyecto y por medio del
-   siguiente comando más la URL se podra subir el proyecto:
+	• git commit
 
-      git remote add <URL>
-
-   Ya para que los archivos se enceuntren el repositorio, basta con escribir el siguiente
-   comando para confirmar
-
-      git push -u origin
-
-   Al ingresar dicho comando, nos solicitará el usuario y contraseña de la cuenta GitHub
+Para evitar el ingresar al editor de texto, basta con emplear el comando siguiente, en el cual se enviará el mensaje para la actualización.
+	
+	• git commit -m "Mensaje de actualización..."
 
 
----- Clonar un proyecto de GitHub al ordenador ------------------------------------------
+---- Visualizar los Commits ------------------------------------------------------------------------
+Para visualizar los commits que se han creado, se emplea el comando git log y se podrá ver a detalle los commits.
 
-   Para descargar un proyecto que se enceuntra en un repositorio de GitHub puede realizarse
-   de dos maneras, descargando un ZIP desde la pagina de internet o posicionandonos desde
-   CMD en el directorio donde deseamos tener nuestro proyecto, y por medio del siguiente
-   comando más la URL del repositorio.
-
-      git clone <URL>
+	• git log
 
 
-*** Para crear un nuevo repositorio ***
+---- Retroceder las versiones de archivos ----------------------------------------------------------
+En caso de que se modifique un archivo, pero aún no se haya hecho un commit, por medio del comando status se podrá visualizar que archivos han sido modificados, y en caso de querer descartar dichos cambios, y regresar a la versión original, se utiliza:
 
- - Se debe crear tanto el PROYECTO localmente, como un REPOSITORIO en GitHub.
- - Se ingresa desde la terminal a la página del proyecto, y se inicia un nuevo repositorio
-   Git para los archivos, por medio de "git init".
- - Se deben agregar cada uno de los archivos en la carpeta, por medio del comando "git add ."
-   con el cual se almacen en el repositorio temporal.
- - Con el comando "git commit - m "<mensaje del commit>"" en el cual se va a indicar el
-   comentario o commit por el cual se han actualizado los archivos de manera local.
- - Ahora se deben colocar el comando remote que esta en repositorio de GitHub el cual es del
-   tipo "git remote add origin https://github.com/<titular>/<nombreProyecto.git>" con el cual
-   asigna la ruta donde se estarán realizando los commit.
- - Por último se utiliza el comando "git push -u origin master" para enviar todos aquellos
-   archivos del repositorio local al repositorio en GitHub.
- - Se puede emplear un archivo del tipo gitignore, el cual tiene como función el ignorar las
-   dependencias a archivos que se puedan o no generar por parte de ciertos lenguajes. En la
-   página gitignore.io se puede crear este archivo.
+	• git checkout -- <nombre del archivo>
 
+
+---- Visualizar las diferencias entre versiones de archivos ----------------------------------------
+Si existiera algún archivo modificado pero un no agregado al repositorio maestro, será posible visualizar que cambios a tenido el archivo, por medio del comando:
+
+	• git diff <nombre del archivo>
+
+
+---- Versiones de Proyectos ------------------------------------------------------------------------
+Es posible crear diferentes tipos de proyectos, para trabajar distintas versiones, ya sea para implementar algún cambio nuevo o de versiones de prueba o respaldo, con el comando git branch para visualizar en que versión se está trabajando, por default será Master, y para crear una nueva versión es con branch más el nombre de la versión.
+
+	• git branch
+	• git branch <nombre version>
+
+Para cambiar entre versiones se emplea un checkout, con el comando, más la versión.
+
+	• git checkout <nombre version>
+
+
+---- Subir proyecto a un Repositorio GitHub --------------------------------------------------------
+Previo a la creación de un nuevo repositorio o proyecto en GitHub, se obtendrá una URL perteneciente al mismo. Ubicándonos en la carpeta raiz del proyecto y por medio del siguiente comando más la URL se podrá subir el proyecto:
+
+	• git remote add <URL>
+
+Ya para que los archivos se encuentren el repositorio, basta con escribir el siguiente comando para confirmar.
+
+	• git push -u origin
+
+ Al ingresar dicho comando, nos solicitará el usuario y contraseña de la cuenta GitHub
+
+
+---- Clonar un proyecto de GitHub al ordenador -----------------------------------------------------
+Para descargar un proyecto que se encuentra en un repositorio de GitHub puede realizarse de dos maneras, descargando un ZIP desde la página de internet o posicionándonos desde CMD en el directorio donde deseamos tener nuestro proyecto, y por medio del siguiente comando más la URL del repositorio.
+
+git clone <URL>
